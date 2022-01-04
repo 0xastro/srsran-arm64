@@ -31,5 +31,16 @@ sudo ldconfig
 ## copy configs to /root
 sudo ./srsran_install_configs.sh user
 
+## 
+sudo systemctl disable ondemand
+sudo apt install linux-tools-raspi
+
+#sudo nano /etc/default/cpufrequtils
+#* insert:
+#* GOVERNOR="performance"
+
+## reboot
+# sudo cpupower frequency-info
+
 ## Test srsepc
-sudo srsepc
+# sudo srsepc
